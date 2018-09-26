@@ -1,14 +1,18 @@
 #include <iostream>
 #include <string>
 //function declarations
-void arm();
+
 void selectWarhead(std::string t_warhead);
-void generateEnemyPath();
+void generateEnemyPos();
+void enterCode();
 
-
+std::string nucCode{ "q30IuDVw" };
+std::string expCode{ "bTx7GPij" };
+std::string inpCode{ "" };
 
 struct Missile
 {
+public:
 	Warhead payload;
 	Coordinates position;
 	Target target;
@@ -17,7 +21,7 @@ struct Missile
 	{
 		if (armed)
 		{
-			armed = false;
+			armed = false; 
 		}
 		else
 		{
@@ -26,13 +30,14 @@ struct Missile
 	}
 	void update()
 	{
-		coordinates.x += 1;
-		coordinates.y += 2;
+		position.x += 1;
+		position.y += 2;
 	}
 };
 
 typedef struct Position
 {
+public:
 	int x;
 	int y;
 	
@@ -42,7 +47,7 @@ typedef struct Position
 	}
 }Coordinates;
 
-enum Warhead
+enum class Warhead
 {
 	EXPLOSIVE,
 	NUCLEAR
@@ -66,7 +71,11 @@ int main()
 	std::cout << std::endl;
 	std::cout << "------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
+	std::cout << "Nuclear code: " << nucCode << std::endl;
+	std::cout << "Explosive code: " << expCode << std::endl;
+	std::cout << "------------------------------------------------------------" << std::endl;
 	std::cout << "please select a warhead: Nuclear (n), Explosive (e)" << std::endl;
+	std::cout << "------------------------------------------------------------" << std::endl;
 	std::cin >> warheadType;
 	selectWarhead(warheadType);
 	system("pause");
@@ -83,7 +92,7 @@ void selectWarhead(std::string t_warhead)
 	}
 	if (t_warhead == "e" )
 	{
-		Warhead :: EXPLOSIVE;
+		
 	}
 	else
 	{
@@ -91,7 +100,19 @@ void selectWarhead(std::string t_warhead)
 	}
 }
 
-void generateEnemyPath()
+void generateEnemyPos()
 {
 	
+}
+
+void enterCode()
+{
+	if (true)
+	{
+
+	}
+	else
+	{
+
+	}
 }

@@ -1,2 +1,13 @@
 ﻿  Main.cpp
-  playProg1.vcxproj -> C:\Users\C00207281\Desktop\playProg1\x64\Debug\playProg1.exe
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(16): error C3646: 'payload': unknown override specifier
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(17): error C3646: 'position': unknown override specifier
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(18): error C3646: 'target': unknown override specifier
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(33): error C2065: 'position': undeclared identifier
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(33): error C2228: left of '.x' must have class/struct/union
+  c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(33): note: type is 'unknown-type'
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(34): error C2065: 'position': undeclared identifier
+c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(34): error C2228: left of '.y' must have class/struct/union
+  c:\users\c00207281\desktop\playprogassignment\playprog1\main.cpp(34): note: type is 'unknown-type'
